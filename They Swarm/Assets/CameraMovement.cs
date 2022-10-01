@@ -82,7 +82,7 @@ public class CameraMovement : MonoBehaviour
             float dy = (p2 - p1).y * rotateSpeed;
 
             transform.rotation *= Quaternion.Euler(new Vector3(0, dx, 0));
-            transform.GetChild(0).transform.rotation *= Quaternion.Euler(new Vector3(dy, 0, 0));
+            transform.GetChild(0).transform.rotation *= Quaternion.Euler(new Vector3(-dy, 0, 0));
         }
     }
 }
